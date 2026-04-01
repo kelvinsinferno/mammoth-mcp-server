@@ -1,0 +1,38 @@
+{
+  "name": "@mammoth-protocol/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for Mammoth Protocol. Makes Mammoth callable as a native tool for any LLM agent — Claude, GPT, Gemini, Eliza, Virtuals, and more.",
+  "main": "src/index.js",
+  "bin": {
+    "mammoth-mcp": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "solana",
+    "mammoth",
+    "ai-agent",
+    "token-issuance",
+    "claude",
+    "llm-tools"
+  ],
+  "author": "Kelvinsinferno Studio",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/web3.js": "^1.95.0",
+    "@mammoth-protocol/sdk": "file:../mammoth-sdk"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kelvinsinferno/mammoth-mcp-server.git"
+  }
+}
