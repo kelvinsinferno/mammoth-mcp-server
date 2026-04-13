@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node --watch src/index.js"
+    "dev": "node --watch src/index.js",
+    "test": "node ./test-mcp.js"
   },
   "keywords": [
     "mcp",
@@ -23,10 +24,11 @@
   "author": "Kelvinsinferno Studio",
   "license": "MIT",
   "dependencies": {
+    "@coral-xyz/anchor": "^0.31.1",
+    "@mammoth-protocol/sdk": "file:../mammoth-sdk",
     "@modelcontextprotocol/sdk": "^1.0.0",
-    "@coral-xyz/anchor": "^0.30.1",
     "@solana/web3.js": "^1.95.0",
-    "@mammoth-protocol/sdk": "file:../mammoth-sdk"
+    "hono": "^4.12.12"
   },
   "engines": {
     "node": ">=18.0.0"
